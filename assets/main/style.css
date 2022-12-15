@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); 
+@import url('https://fonts.cdnfonts.com/css/monument-extended');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #191919;
+    background-image: url('../images/bg.png');
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    padding: 26px;
+    box-sizing: border-box;
+}
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+}
+.header__nav-item {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.header__nav-item:hover {
+    font-weight: 800;
+    transition: 300ms;
+}
+.header__nav-item--active {
+    font-weight: 800;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+}
+.send {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 170px;
+}
+.send__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.send__pretext {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+.send__pretext-item--red {
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FF5A5A;
+}
+.send-pretext-item{
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #CFCFCF;
+}
+.send__texts-title {
+    font-family: 'Monument Extended', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+.send__texts-descript {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #CFCFCF;
+}
+.inputai {
+    margin-top: 36px;
+    transition: 300ms;
+}
+.inputai__design {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 26px 6px 26px;
+    gap: 10px;
+    width: 100%;
+    height: 48px;
+    background: radial-gradient(1459.43% 1459.43% at 50.39% -1239.62%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 500px;
+}
+.inputai__design input {
+    background: none;
+    border: none;
+    width: 50%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #CFCFCF;
+}
+.inputai__design input:focus {
+    outline: none;
+}
+.inputai__design button {
+    display: flex;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 6px 16px 6px 16px;
+    gap: 10px;
+    color: #CFCFCF;
+    border-radius: 56px;
+}
+.inputai__design button:hover {
+    background: radial-gradient(1459.43% 1459.43% at 50.39% -1239.62%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 300ms;
+}
+.latest {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+}
+.latest__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+.latest__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.latest__cards a {
+    text-decoration: none;
+}
+.latest__card-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #CFCFCF;
+    padding: 2px 16px;
+    border-radius: 16px;
+    background-color: #001828;;
+}
+.latest__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    border: 1px solid #383838;
+}
+.trends {
+    background: url('../images/trends.png');
+}
+.space {
+    background: url('../images/space.png');
+}
+.stairs {
+    background: url('../images/stairs.png');
+}
+.latest__card:hover {
+    box-shadow: 9px 9px 0px rgba(0, 0, 0, 0.25);
+    transition: 300ms;
+}
+@media only screen and (max-width: 900px) {
+    .header {
+        width: 80%;
+    }
+    
+}
+@media only screen and (max-width: 750px) {
+    .header {
+        width: 90%;
+    }
+    .container {
+        width: 90%;
+    }
+}
+@media only screen and (max-width:700px) {
+    .latest__cards {
+        width: 90%;
+        gap: 26px;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .header__nav {
+        gap: 16px;
+    }
+    .header__logo {
+        width: 114px;
+        height: 19px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .header {
+        width: 100%;
+    }
+}
