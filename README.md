@@ -4,3 +4,4 @@ NFT generation software that will work with fully open source artificial intelli
 
 ## Screenshots
 ![Home!](assets/images/screenshots/home.png "Home")
+![Result!](assets/images/screenshots/result.png "Result")
